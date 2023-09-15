@@ -318,13 +318,28 @@ body {
 .portfolio__content{
     column-count: 4;
     column-gap: 23px;
+    margin-bottom: 72px;
 }
 
 .portfolio__item{
-    margin-bottom: 23px;
+    margin-bottom: 22px;
 }
 
 .portfolio__item img{
     width: 100%;
+}
+
+.portfolio_add{
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    color: #242121;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 42px 15px 41px;
+    background: #F6F8FA;
 }
 
