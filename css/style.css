@@ -311,18 +311,68 @@ body {
 .portfolio__top{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-bottom: 100px;
+}
+
+.portfolio__filter-btn{
+    margin-right: 40px; /*68-25-4=39~40*/
+}
+
+.portfolio__btn{
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-family: Open Sans, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 4px 5px;
+    margin-right: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.mixitup-control-active{
+    border-bottom: 1px solid #FCBB08;
 }
 
 .portfolio__content{
     column-count: 4;
     column-gap: 23px;
-    margin-bottom: 72px;
+    margin-bottom: 50px;  /*72-22=50*/
 }
 
 .portfolio__item{
     margin-bottom: 22px;
+    position: relative;
+}
+
+.portfolio__item-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 14px;    
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 1.4px;
+    color: #FFF;
+    background-color: #4C4A4A;
+    border: 12px solid #666565;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.portfolio__item:hover .portfolio__item-link{
+    opacity: 1;
 }
 
 .portfolio__item img{
@@ -341,5 +391,62 @@ body {
     text-transform: uppercase;
     padding: 42px 15px 41px;
     background: #F6F8FA;
+    margin-bottom: 130px;
+}
+
+.blockquote{
+    max-width: 650px;
+    margin: 0 auto 148px;
+    text-align: center;
+    font-family: Merriweather, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 36px;
+    color: #242121;
+}
+
+.blockquote__author{
+    padding-top: 51px;
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    color: #9E9E9E;
+}
+
+.portfolio__video{
+    background-image: url('../img/video-bg.jpg');
+    height: 324px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 164px;
+}
+
+.portfolio__numbers{
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio__numbers-item{
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+    color: #242121;
+    margin-bottom: 9px;
+}
+
+.portfolio__numbers-item span{
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    color: #333;
+    display: block;
 }
 
