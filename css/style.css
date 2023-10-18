@@ -320,7 +320,7 @@ body {
   background-color: transparent;
   border: none;
   color: #333;
-  font-family: Open Sans, sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 24px;
@@ -430,7 +430,7 @@ body {
 
 .portfolio__numbers-item {
   text-align: center;
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 60px;
   font-weight: 700;
   line-height: normal;
@@ -725,4 +725,22 @@ ul.footer__social {
   font-weight: 400;
   line-height: normal;
   color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .menu__list {
+    display: none;
+  }
+  .header__title {
+    font-size: 50px;
+    line-height: 65px;
+    margin-bottom: 10px;
+  }
+  .header__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 500px) {
 }
