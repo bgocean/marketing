@@ -755,14 +755,18 @@ ul.footer__social {
     display: block;
   }
   .about__title,
-  .team__title {
+  .team__title,
+  .pricing_title,
+  .connection__title {
     margin-bottom: 50px;
   }
   .about,
   .expertise,
   .portfolio,
   .slider-blog,
-  .team {
+  .team,
+  .pricing,
+  .connection {
     padding: 75px 0;
   }
   .about__text p {
@@ -778,7 +782,9 @@ ul.footer__social {
   .portfolio__filter-btn {
     margin-right: 0;
   }
-  .team__items {
+  .team__items,
+  .pricing__items,
+  .clients__list {
     gap: 20px;
   }
 }
@@ -821,6 +827,26 @@ ul.footer__social {
   }
   .portfolio__top {
     margin-bottom: 50px;
+  }
+  .connection {
+    background-image: none;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .footer__top {
+    padding-top: 75px;
+  }
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+  ul.footer__social {
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .footer__social-list {
+    width: 33.33%;
+    margin-bottom: 25px;
   }
 }
 
@@ -927,6 +953,21 @@ ul.footer__social {
     font-size: 24px;
     line-height: 32px;
   }
+  .pricing__items {
+    display: block;
+  }
+  ul.pricing__item {
+    margin: 0 auto 25px;
+    max-width: 500px;
+    width: 100%;
+  }
+  .clients__list {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .clients__list li {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -957,6 +998,9 @@ ul.footer__social {
   }
   .portfolio__numbers-item {
     width: 100%;
+  }
+  .footer__social-list {
+    width: 50%;
   }
 }
 
